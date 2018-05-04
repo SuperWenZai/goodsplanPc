@@ -1,0 +1,157 @@
+/*CSS通用重置样式*/
+*{word-break:break-all;font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;}
+body, div, dl, dt, dd, ul, ol, li,h1, h2, h3, h4, h5, h6, pre, code,form, fieldset, legend, input, button,textarea, p, blockquote, th, td {margin:0;padding:0;}
+fieldset, img {border:0;}
+:focus {outline:0;}
+address, caption, cite, code, dfn,em, strong, th, var, optgroup,i {font-style:normal;font-weight:normal;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;font-weight:normal;}
+abbr, acronym {border:0;font-variant:normal;}
+input, button, textarea,select, optgroup, option {font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+code, kbd, samp, tt {font-size:100%;}
+input, button, textarea, select {*font-size:100%;}
+ol, ul {list-style:none;}
+caption, th {text-align:left;}
+sup, sub {font-size:100%;vertical-align:baseline;}
+:link, :visited , ins {text-decoration:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
+a:link,a:visited,a:active{color:#333;text-decoration:none;}
+a:hover{color:#222;text-decoration:none;}
+img{vertical-align:middle;}
+.img100 {width: 100%;}
+.clearfix:before, .clearfix:after{content:"\0020";display:block;height:0;overflow:hidden;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+
+body { background: #F7FAFC; font-size: 14px;}
+.hidden { display: none;}
+
+.text-center { text-align: center;}
+.text-right { text-align: right;}
+.sm-main { background: #fff;}
+.sm-main-table { padding: 50px; background: #fff;}
+
+// 字号
+.f16 { font-size: 16px;}
+.f18 { font-size: 18px;}
+.f20 { font-size: 20px;}
+.f22 { font-size: 22px;}
+.f24 { font-size: 24px;}
+
+// 常用色
+.blue { color: #409EFF; }
+.gray-6 { color: #666; }
+
+// 边距
+.mt50 { margin-top: 50px;}
+.mt20 { margin-top: 20px;}
+.mt10 { margin-top: 10px;}
+.ml10 { margin-left: 10px;}
+.mb20 { margin-bottom: 20px;}
+.pt50 { padding-bottom: 50px;}
+
+// 详情单元格
+
+.detail-cell { margin: 10px 0; display: inline-block;}
+
+// 计划表流程
+.x-flow {
+    .el-col {
+        position: relative;
+        &.line{
+            height: 80px;
+            &:after {
+                content: "";
+                top: 24px;
+                position: absolute;
+                width:100%;
+                height: 1px;
+                background: #ccc;
+            }
+        }
+    }
+    .detail-cell {
+        color: #ccc;
+        padding-left: 40px;
+        position: relative;
+        p {
+            line-height: 30px;
+            font-size: 18px;
+            &.grey {
+                font-size: 14px;
+            }
+            &.blue {
+                font-size: 14px;
+                position: absolute;
+                width: 300px;
+                left: -40px;
+                i {
+                    cursor: pointer;
+                    vertical-align: middle;
+                }
+            }
+        }
+        span {
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+       
+        &.active {
+            color: #333;
+            span {
+                background: #409EFF;
+                border-color: #409EFF;
+                color: #fff;
+            }
+            p.grey {
+                color: #666;
+            }
+        }
+    }
+}
+
+// 模块
+
+.x-floor   {
+    background: #fff;
+    margin-top: 20px;
+    padding: 20px 0;
+    
+}
+.detail-cell { margin: 10px 0; display: inline-block;}
+
+/** 单行益处省略号 **/
+.ellipsis {
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+/** 图片居中 **/
+.bgcenter {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+// 图标
+.iconLoan{
+	background-image: url('../images/loan.png')
+}
+.iconPlanInventory{
+	background-image: url('../images/planInventory.png')
+}
+.iconReturnlist{
+	background-image: url('../images/returnlist.png')
+}
+.iconSet{
+	background-image: url('../images/set.png')
+}
