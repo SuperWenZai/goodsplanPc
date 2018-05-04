@@ -1,0 +1,108 @@
+.CheckPlan {
+    .x-floor   {
+        padding-bottom: 30px;
+        .el-row {
+            padding:0 50px;
+        }
+    }
+    .input-with-select .el-input-group__prepend {
+        background-color: #fff;
+        width: 79px;
+        .el-select {
+            width: 119px;
+        }
+    }
+    .edit-warp {
+        .el-row {
+            padding:0;
+        }
+    }
+    th  { text-align: center; background: #e6e8ec;}
+    .all-list {
+        .el-col {
+            p {
+                line-height: 36px;
+            }
+        }   
+    }
+    .search {
+        .el-select {
+            width: 150px;
+        }
+    }
+   
+    .el-table__row {
+        &.disabled{
+            background: #f5f7fa!important;
+            cursor: not-allowed;
+        }
+    }
+    .edit-warp {
+        padding-left: 20px;
+        // .el-input {
+        //     width: 200px;
+        // }
+        .el-tabs__content {
+            height: 650px;
+            overflow-y: scroll;
+        }
+        .el-input__inner {
+            text-align: center;
+        }
+    }
+    .shop-detail {
+        border:1px solid #eee;
+        padding: 10px;
+        margin-top: 10px;
+        .detail-cell {
+            margin: 5px 0;
+        }
+    }
+    .screeningWarp {
+        .shop-detail {
+            padding: 20px 20px 0 20px;
+            height: 340px; 
+            overflow-y: scroll;
+        }
+    }
+    .backEdit{
+        .el-input {
+            width: 200px;
+        }
+    }
+   
+    .sortableList {
+        background: #eee;
+        height: 270px;
+        overflow-y: scroll;
+    }
+    
+   
+}
+.sortableItem {
+    -moz-user-select:none; /*火狐*/
+    -webkit-user-select:none; /*webkit浏览器*/
+    -ms-user-select:none; /*IE10*/
+    -khtml-user-select:none; /*早期浏览器*/
+    user-select:none;
+    z-index: 3000!important;
+    border-bottom:1px solid #eee;
+    background: #fff;
+    .is-disabled {
+        .el-checkbox__label {
+            color: #409EFF!important;
+        }
+        .el-checkbox__inner {
+           background-color: #409EFF!important;
+           border-color: #409EFF!important;
+        }
+        
+    }
+    .name {
+        cursor: pointer;
+    }
+   .el-row {
+       padding: 10px;
+       color: #606266;
+   }
+}
